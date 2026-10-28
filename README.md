@@ -24,7 +24,7 @@ Follow us on X - [@postmarkapp](https://x.com/postmarkapp)
 # Setup
 
 ## Requirements
-- Node.js 18 or higher; the offline test suite uses Node.js 24
+- Node.js 20 or higher; the offline test suite uses Node.js 24
 - A [Postmark account](https://account.postmarkapp.com/sign_up) and server token
 
 ## Installation (Local Development)
