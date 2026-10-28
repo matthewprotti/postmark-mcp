@@ -24,7 +24,7 @@ Follow us on X - [@postmarkapp](https://x.com/postmarkapp)
 # Setup
 
 ## Requirements
-- Node.js (v16 or higher recommended)
+- Node.js 18 or higher; the offline test suite uses Node.js 24
 - A [Postmark account](https://account.postmarkapp.com/sign_up) and server token
 
 ## Installation (Local Development)
@@ -42,6 +42,11 @@ yarn
 # or
 bun install
 ```
+
+The maintained fork commits `package-lock.json`. Use `npm ci --ignore-scripts`
+for reproducible installation, then `npm test` on Node.js 24. The tests exercise
+the real MCP protocol with synthetic data and mocked Postmark/fetch clients;
+they do not load an environment file, require credentials, or send email.
 
 ## Configuration (Local Development)
 
