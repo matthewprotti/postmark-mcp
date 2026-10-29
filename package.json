@@ -16,7 +16,7 @@
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.0.0"
   },
   "files": [
     "index.js",
@@ -25,14 +25,15 @@
   ],
   "scripts": {
     "start": "node index.js",
+    "test": "node --experimental-test-module-mocks --test",
     "inspector": "npx @modelcontextprotocol/inspector index.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@modelcontextprotocol/sdk": "1.32.2",
     "dotenv": "^16.4.5",
     "node-fetch": "^3.3.2",
     "postmark": "^4.0.5",
-    "zod": "^3.23.8"
+    "zod": "4.6.7"
   },
   "publishConfig": {
     "access": "public"
